@@ -20,6 +20,11 @@ the goal is everything around it, the way a DevOps engineer would set it up in a
 - `deploy/` Compose files, Nginx configs, later Ansible, Terraform and Kubernetes manifests.
 - `docs/` diagrams and notes.
 
+## Prerequisites
+
+- Git
+- Docker
+
 ## Status
 
 Work in progress. Currently: project skeleton.
