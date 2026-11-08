@@ -16,9 +16,9 @@ the goal is everything around it, the way a DevOps engineer would set it up in a
 
 ## Repository structure
 
-- `app/` application code and its Dockerfile
-- `deploy/` Compose files, Nginx configs, later Ansible, Terraform and Kubernetes manifests
-- `docs/` diagrams and notes
+- `app/` application code and its Dockerfile.
+- `deploy/` Compose files, Nginx configs, later Ansible, Terraform and Kubernetes manifests.
+- `docs/` diagrams and notes.
 
 ## Status
 
