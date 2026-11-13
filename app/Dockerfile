@@ -8,6 +8,8 @@ COPY requirements.txt .
 
 RUN pip install --no-cache-dir -r requirements.txt
 
+RUN pip uninstall -y pip
+
 COPY main.py .
 
 USER 10001
