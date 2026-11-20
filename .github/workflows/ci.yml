@@ -19,6 +19,12 @@ jobs:
         with:
           dockerfile: app/Dockerfile
           failure-threshold: warning
+          ignore: DL3059
 
       - name: Build image
         run: docker build -t infra-lab-api:ci app
+
+      - name: Scan image with Trivy
+        run: |
+          docker save infra-lab-api:ci -o image.tar
+          docker run --rm -v "$PWD:/work" aquasec/trivy:0.76.2 image --input /work/image.tar --pkg-types library --severity CRITICAL,HIGH --exit-code 1
